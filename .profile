@@ -11,9 +11,8 @@ export LANG=en_US.UTF-8
 export TERM="xterm-color"
 
 alias ducks='du -cks * | sort -rn | head -15'
-alias sshr='ssh -l dspolleke -A -v'
+alias sshr='ssh  -A -v'
 alias sshfix='ssh-keygen -f /Users/dspolleke/.ssh/known_hosts -R'
-alias sshadm="ssh -v adm -t 'if tmux ls; then tmux attach; else tmux; fi'"
 alias sshadm="ssh -v adm -t 'if tmux ls; then tmux attach; else tmux; fi'"
 alias sshfix='ssh-keygen -f /Users/dspolleke/.ssh/known_hosts -R'
 alias ls='ls -GFh'

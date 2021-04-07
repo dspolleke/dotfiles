@@ -76,7 +76,7 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 
 # Set background to dark-grey color
-sqlite3 ~/Library/Application\ Support/Dock/desktoppicture.db "update data set value = '/Library/Desktop Pictures/Solid Colors/Solid Gray Dark.png'"
+#sqlite3 ~/Library/Application\ Support/Dock/desktoppicture.db "update data set value = '/Library/Desktop Pictures/Solid Colors/Solid Gray Dark.png'"
 
 ###############################################################################
 # SSD-specific tweaks                                                         #
@@ -142,7 +142,7 @@ defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 # Save screenshots to the desktop
-defaults write com.apple.screencapture location -string "${HOME}/Desktop"
+#defaults write com.apple.screencapture location -string "${HOME}/Desktop"
 
 # Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
 defaults write com.apple.screencapture type -string "png"
@@ -281,9 +281,9 @@ defaults write com.apple.dock showhidden -bool true
 defaults write com.apple.universalaccess reduceTransparency -bool true
 
 # Add iOS Simulator to Applications folder.
-if [[ "$RUN_AS_ROOT" = true ]]; then
-  sudo ln -sf /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app /Applications/Simulator.app
-fi
+#if [[ "$RUN_AS_ROOT" = true ]]; then
+#  sudo ln -sf /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app /Applications/Simulator.app
+#fi
 
 # Hot corners
 # Possible values:
