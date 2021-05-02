@@ -46,7 +46,7 @@ set clipboard=unnamed   " allow yy, etc. to interact with OS X clipboard
 map <F2> :NERDTreeToggle<CR>
 
 " remapped keys
-inoremap {      {}<Left>
-inoremap {<CR>  {<CR>}<Esc>O
-inoremap {{     {
-inoremap {}     {}
+#inoremap {      {}<Left>
+#inoremap {<CR>  {<CR>}<Esc>O
+#inoremap {{     {
+#inoremap {}     {}
